@@ -22,17 +22,31 @@
 // const results = macherTorkari('a' , 'b' ,'c');
 // console.log( results);
 
-function number(a, b, c, d, e) {
-    const total = a + b + c + d + e ;
-    console.log(total);
-    const gun = total * a;
-    console.log(gun);
-    const vag = total / gun;
-    if ( vag < 50 ){
-        console.log('temon kichu na ektu paknami');
-    }
-    else {
-        console.log('temon kichu na betha paichi');
-    }
+// function number(a, b, c, d, e) {
+//     const total = a + b + c + d + e ;
+//     console.log(total);
+//     const gun = total * a;
+//     console.log(gun);
+//     const vag = total / gun;
+//     if ( vag < 50 ){
+//         console.log('temon kichu na ektu paknami');
+//     }
+//     else {
+//         console.log('temon kichu na betha paichi');
+//     }
+// }
+// number(8, 5, 6, 4, 7)
+
+function tenTimes(numbers) {
+    console.log( numbers * 10);
+    return numbers;
 }
-number(8, 5, 6, 4, 7)
+tenTimes(20)
+const boll = tenTimes(200);
+console.log(boll);
+
+function enTimes(numbers) {
+    console.log( numbers * 13);
+    return numbers;
+}
+enTimes(boll);
