@@ -37,16 +37,77 @@
 // }
 // number(8, 5, 6, 4, 7)
 
-function tenTimes(numbers) {
-    console.log( numbers * 10);
-    return numbers;
-}
-tenTimes(20)
-const boll = tenTimes(200);
-console.log(boll);
+// function tenTimes(numbers) {
+//     console.log( numbers * 10);
+//     return numbers;
+// }
+// tenTimes(20)
+// const boll = tenTimes(200);
+// console.log(boll);
 
-function enTimes(numbers) {
-    console.log( numbers * 13);
-    return numbers;
+// function enTimes(numbers) {
+//     console.log( numbers * 13);
+//     return numbers;
+// }
+// enTimes(boll);
+
+// function iseven( number) {
+//     console.log( number * 10);
+//     if (number % 2 ===0) {
+//        return console.log(true);
+//     }
+// else{
+//     return console.log(false);
+// }
+
+// }
+
+// iseven(101)
+// iseven(104)
+// iseven(138)
+// iseven(18)
+// iseven(15)
+
+
+// function basicArray( numbs) {
+// let sum = 0;
+// for( const numb of numbs){
+//     console.log(numb);
+//     sum = sum + numb;
+// }
+//    return sum; 
+// }
+// const arreeee = [11, 22, 33, 44, 55, 66];
+// const sum = basicArray(arreeee);
+// console.log('sum of numbers is :', sum);
+
+
+
+function oddNumbers(numbers) {
+    // console.log(numbers);
+    const odds = [];
+    for( const number of numbers){
+        if( number % 2 === 1){
+            console.log('odds numbers:', number);
+            odds.push(number);
+        }
+    }
+    let sum = 0;
+    for( const number of odds){
+        sum = sum + number;
+    }
+    const count  = odds.length;
+    console.log('odds size:', count)
+    console.log('sum all oddNumbers:', sum);
+    console.log('gor odds:', sum / count);
+
 }
-enTimes(boll);
+
+const numbers = [71, 23, 22, 25, 65, 54, 67];
+oddNumbers(numbers);
+
+
+
+
+
+
